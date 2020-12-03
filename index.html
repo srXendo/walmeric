@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <a href="#miModal">Abrir Modal</a>
+        <div id="miModal" class="modal">
+          <div class="modal-contenido">
+            <a href="#">X</a>
+            <div id="wrapperForm">
+                <div class="wrapperSpanInput">
+                    <span>nombre: </span> <input id="name" type="text"> <span class="noRender " id="err_name">nombre no correctof</span>
+                </div>
+                <div class="wrapperSpanInput">
+                    <span>email: </span> <input id="email" type="text"> <span class="noRender " id="err_email">el email no es correcto</span>
+                </div>
+                <div class="wrapperSpanInput">
+                    <span>Nº teléfono: </span> <input id="phone" placeholder="ejemplo: +34-666666666"> <span class="noRender " id="err_phone"> el numero de telefono no es correcto </span>
+                </div>
+                <button type="button" onclick="validateAndSend()">validar y enviar</button>
+            </div>
+          </div>  
+        </div>
+     
+    </body>
+</html>
